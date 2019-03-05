@@ -23,9 +23,8 @@ import { UserContext } from "./App";
 // }
 
 const Toggle = () => {
-  const context = useContext(UserContext)
+  const context = useContext(UserContext);
   const [isToggled, setToggle] = useState(context.user);
-
   return (
     <div>
       <button

@@ -9,6 +9,7 @@ import Toggle from "./Toggle";
 import { useTitleInput } from "./hooks/useTitleInput";
 import Counter from "./Counter";
 
+
 const UserContext = createContext();
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
       "https://my-json-server.typicode.com/leveluptuts/fakeapi/dishes"
     ).then(async data => await data.json().then(data => setDishes(data)));
   };
+
 
   useEffect(() => {
     fetchDishes();
